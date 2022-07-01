@@ -10,32 +10,44 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container sign-in_form">
       <div class="header">
         <h2>Create Account</h2>
       </div>
+
       <form class="form" id="form">
-        <div class="form-control success">
-          <label>Username</label>
-          <input type="text" placeholder="alehwaleh101" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control error">
-          <label>Email</label>
-          <input type="text" placeholder="alehboy345@gmail.com" id="email" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
         <div class="form-control">
-          <label>Password</label>
-          <input type="text" placeholder="password" id="password" />
+          <label>Username</label>
+          <input type="text" placeholder="e.g. alehwaleh101..." id="username" />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
+
+        <div class="form-control">
+          <label>Email</label>
+          <input type="text" placeholder="e.g. alehboy345@gmail.com..." id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control password">
+          <div class="label_grid">
+            <label>Password </label>
+            <div class="show-password_div">
+              <label class="custom-checkbox">
+                <input type="checkbox" id="checkbox" />
+                <span class="checkmark"></span> </label
+              >Show Password
+            </div>
+          </div>
+          <input type="password" placeholder="password" id="password" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
         <div class="form-control">
           <label>Password check</label>
           <input type="text" placeholder="verify password" id="password2" />
@@ -46,5 +58,7 @@
         <button>Submit</button>
       </form>
     </div>
+
+    <script src="/main.js"></script>
   </body>
 </html>
